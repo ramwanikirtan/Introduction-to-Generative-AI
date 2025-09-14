@@ -20,4 +20,9 @@ All course materials are for educational use only. Please do not redistribute wi
 
 ---
 
-For questions or feedback, please contact Kirtan Ramwani.
+
+## Contact Me
+
+[![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://facebook.com/kirtanramwani.5)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/kirtan-digitalmarketer/)
+[![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:ramwanikirtan@gmail.com)
