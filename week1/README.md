@@ -1,4 +1,3 @@
-prompt = "a photo of an astronaut riding a horse on mars"
 # Week 1: The AI Landscape and Generative AI
 
 Welcome to Week 1! This lesson introduces you to the world of artificial intelligence (AI), with a special focus on generative AI. By the end of this week, you’ll understand what generative AI is, how it works, and how it can create text and images.
