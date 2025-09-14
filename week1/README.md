@@ -1,9 +1,8 @@
-# (Removed merge conflict markers and kept the latest, most engaging version)
 # Week 1: The AI Landscape and Generative AI
 
 Welcome to Week 1! Have you ever wondered how ChatGPT writes stories, how DALL-E creates art, or how your phone finishes your sentences? This week, we’ll explore the magic behind these tools and why learning generative AI is one of the most exciting skills for the future.
 
-> **Curiosity Spark:** Imagine a computer that can write a poem, paint a picture, or even invent a new recipe. Generative AI is like a digital artist and storyteller rolled into one!
+>  Imagine a computer that can write a poem, paint a picture, or even invent a new recipe. Generative AI is like a digital artist and storyteller rolled into one!
 
 ---
 
@@ -55,7 +54,7 @@ Generative AI uses special models called neural networks. These models are train
 2. It learns the patterns and relationships in the data.
 3. When given a prompt, it generates new content based on what it has learned.
 
-**Fact:** ChatGPT reached 100 million users in just 2 months—faster than TikTok or Instagram!
+ChatGPT reached 100 million users in just 2 months—faster than TikTok or Instagram!
 
 ---
 
@@ -180,7 +179,7 @@ with autocast("cuda"):
 - It’s a skill that’s in high demand—knowing how to use and understand GenAI can open doors in many careers.
 - It raises important questions about ethics, bias, and the future of work.
 
-**Fact:** Experts estimate that generative AI could add $2.6 to $4.4 trillion to the global economy every year (McKinsey, 2023).
+Experts estimate that generative AI could add $2.6 to $4.4 trillion to the global economy every year (McKinsey, 2023).
 
 ---
 
@@ -188,7 +187,6 @@ with autocast("cuda"):
 - [What is Generative AI? (IBM)](https://www.ibm.com/topics/generative-ai)
 - [Hugging Face Transformers (text models)](https://github.com/huggingface/transformers)
 - [Stable Diffusion (image models)](https://github.com/CompVis/stable-diffusion)
-- [YouTube: Generative AI Explained](https://www.youtube.com/results?search_query=generative+ai+explained)
 
 ---
 
