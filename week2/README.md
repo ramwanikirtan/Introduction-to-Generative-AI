@@ -102,6 +102,19 @@ C --> D[Feed into Model]
 Use this tool to see how OpenAI models tokenize your input text — useful for prompt design and staying within token limits.  
 https://platform.openai.com/tokenizer
 
+
+```python
+# Using Hugging Face tokenizer in Colab
+!pip install --upgrade transformers
+
+import os
+os.environ["HF_token"] = "your hf api key"
+
+from transformers import AutoTokenizer
+tokenizer = AutoTokenizer.from_pretrained("google/gemma-3-1b-it", token=os.environ["HF_token"])
+print(tokenizer("Hello, World!"))
+
+```
 ---
 
 ## ⚙️ Model Parameters vs Hyperparameters
