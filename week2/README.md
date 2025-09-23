@@ -86,6 +86,11 @@ C --> D[Feed into Model]
 ![Types of Tokenization: (Miro Medium)](https://miro.medium.com/v2/resize:fit:4800/format:webp/0*D4NPoyueupNsVCIS)
 <div align="center"><sub>Image credit: Miro Medium</sub></div>
 
+
+
+Use this tool to see how OpenAI models tokenize your input text — useful for prompt design and staying within token limits.  
+https://platform.openai.com/tokenizer
+
 ---
 
 ## ⚙️ Model Parameters vs Hyperparameters
