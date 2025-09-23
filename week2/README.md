@@ -112,13 +112,22 @@ https://platform.openai.com/tokenizer
 - **Parameter:** The weight connecting two neurons in a neural network (learned by the model).
 - **Hyperparameter:** The number of layers in the network (set by the engineer).
 
-> 🍞 **Analogy:** Training a model is like baking bread.  
-> - Ingredients = data  
-> - Oven knobs = parameters (learned)  
-> - Recipe = hyperparameters (set upfront)
+| Type               | Example                       | Description                            |
+| ------------------ | ----------------------------- | -------------------------------------- |
+| **Hyperparameter** | `learning_rate`, `num_epochs` | Set by *you* before training           |
+| **Parameter**      | `weight`, `bias`              | *Learned* by the model during training |
 
-<img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=600&q=80" width="350" alt="Bread Analogy"/>
+### 📌 Hyperparameters vs Parameters
 
+**Hyperparameters** (you set):
+
+- `learning_rate = 0.01` → How fast the model learns
+- `epochs = 100` → How many times the model goes through the data
+
+**Parameters** (model learns):
+
+- `weight = 200` → Price increase per square foot
+- `bias = 50,000` → Base price of the house
 ---
 
 ## 🧠 Large Language Models (LLMs)
