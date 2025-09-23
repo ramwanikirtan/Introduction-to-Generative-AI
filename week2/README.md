@@ -87,6 +87,17 @@ C --> D[Feed into Model]
 <div align="center"><sub>Image credit: Miro Medium</sub></div>
 
 
+## Tokenization Methods Comparison
+
+| Word-Level Tokenization                     | Character-Level Tokenization              |
+|---------------------------------------------|-------------------------------------------|
+| ✅ Captures meaning of words                | ✅ Small vocabulary size                   |
+| ✅ Suitable for language modeling           | ✅ No Out of Vocabulary (OOV) problem      |
+| ❌ Out of Vocabulary (OOV) issues           | ❌ Longer sequence length                  |
+| ❌ Large vocabulary size                    | ❌ No context meaning                      |
+|                                             | ❌ Not suitable for language modeling      |
+
+
 
 Use this tool to see how OpenAI models tokenize your input text — useful for prompt design and staying within token limits.  
 https://platform.openai.com/tokenizer
