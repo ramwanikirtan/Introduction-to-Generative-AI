@@ -158,11 +158,46 @@ Large Language Models (LLMs) are AI systems trained on huge amounts of text (tri
 <div align="center"><sub>Image credit: TensorFlow, <a href="https://aiml.com/explain-the-transformer-architecture/">Transformer Architecture</a></sub></div>
 
 
+### 🚀 Using Transformers & OpenAI Embeddings in Colab
 
-### Popular LLMs (2025)
-- **Proprietary:** GPT-4o, Claude 4, Gemini 2.5 Pro, Ernie 4.5
-- **Open-Source:** LLaMA 4 Scout, Gemma 2, Mistral, DeepSeek R1
+```python
+# Install required libraries
+!pip install openai transformers
 
+# OpenAI embedding
+import openai
+client = openai.OpenAI(
+    api_key="sk-proj-..."  # Replace with your actual key
+)
+response = client.embeddings.create(
+    input="Cat loves milk",
+    model="text-embedding-3-small"
+)
+print(response.data[0].embedding)
+print(len(response.data[0].embedding))
+
+# Tokenization with Hugging Face
+from transformers import AutoTokenizer
+import os
+os.environ["HF_token"] = "your_hf_token"
+tokenizer = AutoTokenizer.from_pretrained("google/gemma-3-1b-it", token=os.environ["HF_token"])
+input_tokens = tokenizer("Write a python code to print Hello,World!", return_tensors="pt")
+
+# Load model and run inference
+import torch
+from transformers import AutoModelForCausalLM
+model = AutoModelForCausalLM.from_pretrained("google/gemma-3-1b-it", token=os.environ["HF_token"], torch_dtype=torch.float16)
+out = model(input_ids=input_tokens["input_ids"])
+print(out)
+
+# Generate output
+gen_out = model.generate(input_ids=input_tokens["input_ids"], max_new_tokens=100)
+print(gen_out)
+
+# Decode output
+print(tokenizer.batch_decode(gen_out))
+
+```
 ---
 
 ## 🎨 Basics of Image Generation
@@ -230,10 +265,13 @@ M --> O[Unified Output: Text, Image, or Speech]
 | Deployment   | Cloud only                 | Local or cloud            |
 | Privacy      | Data handled by provider   | User-controlled data       |
 
-
 > 🚗 **Analogy:** Proprietary = renting a car (easy, polished, but limited control). Open-Source = owning a car (customizable, but you maintain it).
 - ![Proprietary vs Open-Source LLMs](https://datasciencedojo.com/wp-content/uploads/LLM-Website-blog-thumbnails.png)
 <div align="center"><sub>Image credit: datasciencedojo</sub></div>
+
+### Popular LLMs (2025)
+- **Proprietary:** GPT-4o, Claude 4, Gemini 2.5 Pro, Ernie 4.5
+- **Open-Source:** LLaMA 4 Scout, Gemma 2, Mistral, DeepSeek R1
 ---
 
 
