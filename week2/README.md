@@ -56,11 +56,18 @@ Tokenization is how AI models **break text into smaller chunks (tokens)** and co
 #### Step-by-Step Example
 **Text:** "Flowers are blooming in the garden."
 
-| Step | Action | Result |
-|------|--------|--------|
-| 1    | Split into tokens | ["Flowers", "are", "blooming", "in", "the", "garden"] |
-| 2    | Assign IDs        | [101, 202, 303, 404, 505, 606] |
-| 3    | Model processes   | [101, 202, 303, 404, 505, 606] → output |
+1. Start with the text you want to tokenize.
+2. Split the words in the text based on a rule. For example, split the words where there's a white space.
+3. Remove stop words—common words like "are", "in", and "the" that may not carry significant meaning.
+4. Assign a number to each unique token.
+
+| Step | Action              | Result                                                 |
+| ---- | ------------------- | ------------------------------------------------------ |
+| 1    | Start with the text | "Flowers are blooming in the garden"                   |
+| 2    | Split into tokens   | \["Flowers", "are", "blooming", "in", "the", "garden"] |
+| 3    | Stop word removal   | \["Flowers", "blooming", "garden"]                     |
+| 4    | Assign IDs          | \[101, 202, 303]                                       |
+
 
 ![Tokenization Example (Miro Medium)](https://miro.medium.com/v2/resize:fit:1100/format:webp/0*QhRDc8tcmfzSKe16)
 <div align="center"><sub>Image credit: Miro Medium</sub></div>
