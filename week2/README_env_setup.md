@@ -26,7 +26,6 @@ langchain
 langchain-core
 langchain-community
 langchain-openai
-langchain-anthropic
 langchain-google-genai
 
 # Vector DBs
